@@ -123,4 +123,16 @@ printf("=== Algoritmo de Busca em Largura (BFS) ===\n\n");
 
 }
 
+void liberarGrafo(ListaAdj grafo[], int numVertices) {
+	for (int i = 0; i < numVertices; i++) {
+		No* atual = grafo[i].inicio;
+		while (atual != NULL) {
+			No* temp = atual;
+			atual = atual->prox;
+			free(temp);
+		}
+		grafo[i].inicio = NULL;
+	}
+}
+
 

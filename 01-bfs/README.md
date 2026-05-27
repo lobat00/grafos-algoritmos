@@ -34,7 +34,7 @@ Professor: Dr. Júlio Cezar Costa Furtado
 Para compilar o projeto, execute:
 
 ```bash
-gcc main.c bfs.h bfs.c -o main.exe
+gcc main.c bfs.c -o main.exe
 ```
 
 ## Execução

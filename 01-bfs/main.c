@@ -61,6 +61,9 @@ int main() {
 
 	bfs(grafo, numVertices, verticeInicial);
 
+	/* Liberar memória alocada pelo grafo */
+	liberarGrafo(grafo, numVertices);
+
 #if defined(_WIN32) || defined(_WIN64)
 	system("pause");
 #else

@@ -36,5 +36,8 @@ int desenfileirar(Fila* f);
 /* Função para limpar a tela e exibir o cabeçalho */
 void limparTela();
 
+/* Libera memória alocada para o grafo */
+void liberarGrafo(ListaAdj grafo[], int numVertices);
+
 #endif /* BFS_H */
 
